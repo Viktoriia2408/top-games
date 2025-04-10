@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Грати разом 🎮</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background: linear-gradient(to right, #e0f7fa, #dcedc8);
+        color: #333;
+      }
+
+      header {
+        background-color: #062103;
+        color: white;
+        padding: 25px 0;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 36px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .instructions {
+        margin-bottom: 30px;
+      }
+
+      .instructions h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      .instructions ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .instructions li::before {
+        content: "🎯 ";
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      input,
+      textarea {
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 8px;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 12px;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #0056b3;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #062103;
+        color: white;
+        margin-top: 40px;
+      }
+      select {
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: white;
+}
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>👾 Грати разом</h1>
+    </header>
+
+    <div class="container">
+      <section class="instructions">
+        <h2>Як підключитись до гри:</h2>
+        <ul>
+          <li>1. Переконайся, що у тебе стабільний інтернет.</li>
+          <li>
+            2. Встанови одну з улюблених ігор (наприклад, Minecraft або Roblox).
+          </li>
+          <li>3. Увійди в гру та натисни "Грати разом".</li>
+          <li>4. Надішли свої дані, щоб отримати код кімнати.</li>
+        </ul>
+      </section>
+
+      <form>
+        <label for="name">👤 Ім’я або нікнейм:</label>
+        <input type="text" id="name" name="name" required />
+      
+        <label for="game">🎮 Обери улюблену гру:</label>
+        <select id="game" name="game" required>
+          <option value="">-- Обери гру --</option>
+          <option value="Minecraft">Minecraft</option>
+          <option value="Roblox">Roblox</option>
+          <option value="Brawl Stars">Brawl Stars</option>
+          <option value="Fortnite">Fortnite</option>
+          <option value="Counter-Strike 2">Counter-Strike 2</option>
+          <option value="The Sims 4">The Sims 4</option>
+        </select>
+      
+        <label for="message">✍️ Повідомлення або побажання:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+
+    <footer>© 2025 Школа програмування Web Universe | Граймо разом весело 🎉</footer>
+  </body>
+</html>

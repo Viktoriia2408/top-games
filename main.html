@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Топ-3 улюблені ігри</title>
+    <style>
+      body {
+        margin: 0;
+        /* font-family: "Segoe UI", sans-serif; */
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: #d3e3d1;
+      }
+
+      header {
+        background-color: #062103;
+        color: white;
+        padding: 25px 0;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 38px;
+      }
+
+      nav {
+        margin-top: 30px;
+      }
+
+      nav button {
+        background-color: #555;
+        width: 180px;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      nav button:hover {
+        background-color: #777;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 40px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        animation: appear 1.5s ease-in-out;
+      }
+
+      .game-card {
+        background-color: white;
+        width: 280px;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      .game-card:hover {
+        transform: scale(1.05);
+      }
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        height: 240px;
+        object-fit: cover;
+      }
+
+      h3 {
+        margin: 15px 0 5px;
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 14px;
+        color: #666;
+      }
+      .game-card button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .game-card button:hover {
+        background-color: #0056b3;
+      }
+
+      @keyframes appear {
+        from {
+          opacity: 0;
+          transform: translateY(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      footer {
+        background-color: #062103;
+        color: white;
+        text-align: center;
+        padding: 20px 10px;
+        font-size: 14px;
+        margin-top: 60px;
+        border-top: 2px solid #2e5e38;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🎮 Топ-6 улюблених ігор</h1>
+      <nav>
+        <button>Головна</button>
+        <a target="_blank" href="vote.html"><button>Голосування</button></a>
+        <a href="together.html"> <button>Грати разом</button></a>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="game-card">
+        <img src="minecraft.avif" />
+        <h3>Minecraft</h3>
+        <p>Кубічний світ, де можна будувати, досліджувати та виживати!</p>
+        <a target="_blank" href="https://www.minecraft.net/en-us">
+          <button>Дізнатись більше</button></a
+        >
+      </div>
+      <div class="game-card">
+        <img src="roblox.webp" />
+        <h3>Roblox</h3>
+        <p>Грай у тисячі ігор або створи свою власну!</p>
+        <a target="_blank" href="#"> <button>Дізнатись більше</button></a>
+      </div>
+      <div class="game-card">
+        <img src="brawl.jpg" />
+        <h3>Brawl Stars</h3>
+        <p>Бийся з друзями у веселих і динамічних боях 3 на 3!</p>
+        <a target="_blank" href="#"> <button>Дізнатись більше</button></a>
+      </div>
+
+      <div class="game-card">
+        <img src="fortnite.jpeg" />
+        <h3>Fortnite</h3>
+        <p>Кубічний світ, де можна будувати, досліджувати та виживати!</p>
+        <a target="_blank" href="https://www.minecraft.net/en-us">
+          <button>Дізнатись більше</button></a
+        >
+      </div>
+      <div class="game-card">
+        <img src="cs2.jpg" />
+        <h3>Counter-Strike 2 & GO</h3>
+        <p>Грай у тисячі ігор або створи свою власну!</p>
+        <a target="_blank" href="#"> <button>Дізнатись більше</button></a>
+      </div>
+      <div class="game-card">
+        <img src="sims.avif" />
+        <h3>The Sims 4</h3>
+        <p>Бийся з друзями у веселих і динамічних боях 3 на 3!</p>
+        <a target="_blank" href="#"> <button>Дізнатись більше</button></a>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made by: Viktoriia, під час курсу HTML/CSS ❤️</p>
+      <p>© 2025 Школа програмування Web Universe. Всі права захищені.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Голосування за найкращу гру</title>
+    <style>
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background-color: #f0f9f4;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      header {
+        background-color: #044d25;
+        color: white;
+        padding: 25px 0;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 32px;
+      }
+
+      form {
+        margin-top: 40px;
+      }
+
+      label {
+        font-size: 20px;
+        display: block;
+        margin: 15px 0 10px;
+      }
+
+      select,
+      textarea {
+        padding: 10px;
+        width: 300px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+      }
+
+      button {
+        margin-top: 25px;
+        padding: 12px 25px;
+        font-size: 16px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>🗳️ Голосування за улюблену гру</h1>
+    </header>
+
+    <form>
+      <label for="game">Обери свою улюблену гру:</label>
+      <select id="game" name="game">
+        <option>Minecraft</option>
+        <option>Roblox</option>
+        <option>Brawl Stars</option>
+        <option>Fortnite</option>
+        <option>Counter-Strike 2</option>
+        <option>The Sims 4</option>
+      </select>
+
+      <label for="reason">Чому ти обрав(ла) саме цю гру?</label>
+      <textarea
+        id="reason"
+        rows="4"
+        placeholder="Напиши кілька слів..."
+      ></textarea>
+
+      <br />
+      <button type="submit">Надіслати голос</button>
+    </form>
+  </body>
+</html>
